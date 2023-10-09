@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@600;700;800&family=Noto+Sans+Bengali&family=Noto+Sans+JP:wght@100;200;300;400&family=Noto+Sans+NKo+Unjoined:wght@400;500;600&family=Noto+Sans+Shavian&family=Noto+Sans+Syriac+Eastern:wght@100;200;400;500;600&family=Onest:wght@100&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@100&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*estilado header*/
+.colorWhite {
+    color: rgb(240, 240, 240);
+}
+.colorGrey {
+    color: rgb(175, 174, 174);
+}
+.colorGreen {
+    color: rgb(40, 171, 68);
+}
+.header {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right, #00000080, #00000080), url(../assets/imagen/ba1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.headerNavegacion {
+    height: 13%;
+    background-color: rgb(51, 58, 64);
+    display: flex;
+}
+.logoHeader {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+    padding-left: 8%;
+}       
+.textoConfHeader {
+    font-size: small;
+    position: relative;
+    bottom: 5px;
+}
+.textoConfHeaderh2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400; 
+}    
+.imagenLogo {
+    width: 100px;
+}
+.divNav {
+    width: 70%;
+    font-family: 'Noto Sans NKo Unjoined', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+.listaHeader {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+.linkNav {
+    text-decoration: none;
+    padding: 10px;
+}
+.conferencia{
+    display: flex;
+    height: 87vh;
+    padding-right: 130px;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 50%;
+    justify-content: flex-end;
+    align-items: center;
+}        
+.divConferenciaTexto{
+    display: flex;
+    flex-direction: column ;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5rem;
+    text-align:end;
+    margin-top: 20px;
+}    
+.tituloConferencia{
+    padding-bottom: 20px;
+    font-size: 21px;
+}
+.divAnclas{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+.botonOrador{
+    margin-top: 0.3rem;
+    color: rgb(243, 236, 236);
+    border:1px solid rgb(173, 146, 146);
+    border-radius: 3px;
+    padding: 8px; 
+    margin-right: 10px;
+}
+.anclaConferencia{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+.botonTickets{
+    background-color: rgb(40, 167, 68);
+    text-decoration: none;
+    margin-top: 0.3rem;
+    color: rgb(243, 236, 236);
+    border-radius: 3px;
+    padding: 8px;
+    padding-bottom: 5px;
+}
+/*oradores*/
+.oradores{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center; 
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 50px;
+    margin-top: initial;
+}
+.oradores h2{
+    font-family: 'Noto Sans Syriac Eastern', sans-serif;
+    padding-top: 20px;  
+}
+.titOradores{
+    font-family: 'Noto Sans Syriac Eastern', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+.divOradores{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    column-gap: 20px;   
+}
+.tarjeta{
+    background-color:white;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border: 1px solid #e2e2e2;
+    height: 100%;
+    display: inline-block;
+    margin-top:20px;
+    text-align: left;
+}
+.tarjeta img{
+    width:100%;
+    height:60%;
+    object-fit: cover;
+    border-radius: 5px 5px 0px 0px;
+}
+.cuerpoTarjeta{
+    margin:10px;
+}
+.cuerpoTarjeta h4{
+    font-family: 'Gabarito', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    display:inline-block;
+    border-radius:5px;
+    margin-right: 5px;
+    padding: 2px;
+}
+.tituloNombre{
+    font-family: 'Open Sans', sans-serif;
+    margin-top:5px;
+    margin-bottom:20px;
+}
+.parrafoTarjeta{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 1.3rem;
+}
+.colorCeleste{
+    background-color: rgb(23, 162, 184);
+    color:white;
+}
+.colorAmarillo{
+    background-color: rgb(254, 193, 7);
+    color:black;
+}
+.colorGris{
+    background-color: rgb(108, 117, 126);
+    color:white;
+}
+.colorRojo{
+    background-color: rgb(220, 53, 71);
+    color:white;
+}
+.lugarFecha{
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid white;
+    gap: 1px;
+    height: 65vh;
+}
+.imgLugarFecha{
+    height: 65vh;
+    width: 50%;
+    background-image: url(../assets/imagen/honolulu.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.textoLugarFecha{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 65vh;
+    width: 50%;
+    background-color: rgb(51, 58, 64);
+    color: white;
+    font-family: 'Noto Sans Syriac Eastern', sans-serif;
+}
+.h2{
+    font-weight: 500;
+    font-size: 1.5rem;  
+    margin-bottom: 0.3rem;
+}
+.p{
+    font-weight: 200;
+    font-size: 0.8rem;
+    line-height: 1.5rem;   
+}
+.divAncla{
+  margin-top: 12px;
+}
+.a{
+    font-weight: 200;
+    font-size: 0.8rem;
+    text-decoration: none;
+    margin-top: 0.3rem;
+    color: rgb(243, 236, 236);
+    border:1px solid rgb(243, 236, 236);
+    border-radius: 3px;
+    padding: 4px;
+}
+.formularioOrador{
+    height: 50vh;
+}
+.convierteteEnOrador{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Noto Sans Syriac Eastern', sans-serif;
+}
+.divTituloSuperior{
+    font-weight: 400;
+    font-size: 10px;
+}
+.divTituloInferior{
+    font-weight: 500;
+    font-size: 18px;
+}
+.parrafoOrador{
+    font-size: 13px;     
+}    
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nombreApellido{
+    display: flex;
+    flex-direction: row;
+    width: 650px;
+    justify-content: center;
+    column-gap: 30px;
+    margin-bottom: 15px;
+}
+.divApellido{
+    width: 310px;
+    padding: 5px;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border: 1px solid #d2d2d2; 
+}  
+.divNombre{
+    width: 310px;
+    padding: 5px;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border: 1px solid #d2d2d2; 
+}    
+.campoNombreApellido{
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+.campoTexto{
+    width: 650px;
+    height: 100px;
+    font-family: 'Noto Sans Syriac Eastern', sans-serif;
+    font-size: 16px;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border: 1px solid #d2d2d2;
+    padding-top: 10px;
+    padding-left: 10px;               
+} 
+.parrafo{
+    font-family: 'Noto Sans Syriac Eastern', sans-serif;
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 20px;
+}
+.botonEnviar{
+    margin-bottom: 20px;
+}
+.inputBotonEnviar{
+    text-decoration: none;
+    background-color: rgb(150, 201, 62);
+    color: white;
+    border: none;
+    font-family: 'Noto Sans Syriac Eastern', sans-serif;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border: 1px solid rgb(150, 201, 62);
+    font-size: 14px;
+    width: 650px;
+    height: 35px;
+    padding-top: 5px;
+}
+.footer{
+    
+    background-image: linear-gradient(to right, #1c3643, #1c3d4e, #1d445a, #1d4c66, #1e5372);
+    height: 14vh;
+}
+.ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    height: 14vh;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.linkDiv{
+    width: 100px;
+    text-align: center;
+}
+@media screen and (max-width: 576px) {
+  /*header*/
+  body{
+    padding: 20px;
+    
+  }
+    .headerNavegacion{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+       
+        margin-bottom: 50px;
+    }
+    .logoHeader{
+        margin-left: 2vh;
+        position: relative;
+        right: 50px;
+        width: 40vh;
+    }
+    .textoConfHeader {
+        text-align: center;
+        width: 100px;
+        margin: initial;
+        position: relative;
+        right: 10px;  
+    }
+    .textoConfHeaderh2{
+        font-size: 16px;
+        font-weight: 700;
+    }   
+      .divNav {
+        width: 45%;
+        font-family: 'Noto Sans NKo Unjoined', sans-serif;
+        font-size: 10px;
+        flex-direction: column;
+        text-align: center;
+        padding-left: 20px;
+    }
+    .divNavegacion{
+        width:58vh;
+    }
+    .listaHeader{
+        width: 50%;
+        justify-content: flex-end;
+        display: flex;
+        flex-direction: column ;
+        align-items:flex-end;
+        flex-wrap: wrap;
+        margin-left: 5vh;
+    }
+    .item{
+        text-decoration: none;
+        width: 100%;
+        text-align: center;
+        font-size: 13px;
+        padding: initial;
+    }
+    .linkNav {
+        padding: initial; 
+        width: 100px;
+        text-align: center;
+    }
+    .conferencia{
+        display: block;
+        margin: 0;
+        padding: 50px;
+        height: 85vh;
+    }
+    .divConferenciaTexto {
+        height: 55vh;
+        margin: 0 auto;
+        margin-bottom: 5vh;
+        position: absolute;
+        top:25%;
+        text-align:center; 
+        justify-content: center;
+        padding-right: 50px; 
+    }
+    .textoConferencia{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 1.5rem;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .divAnclas{
+        justify-content: center;
+        margin-top: 9vh;
+    }
+    .botonTickets{
+        border:1px solid rgb(240, 240, 240);
+    }
+   /*conoce a los oradores*/
+    .oradores{
+        display: inline;
+        margin: auto; 
+        height: 50vh;
+    }
+    .divOradores{
+        flex-direction: column;
+        align-items: center;  
+        justify-content: center;
+        margin: 20px; 
+    }
+    .oradores h2{
+        padding-top: 0.5vh;
+    }
+  /*lugar y fecha*/
+    .lugarFecha{
+        height: 100vh;
+        flex-direction: column;
+        column-gap: 2px;
+    }
+    .imgLugarFecha{
+        height: 50%;
+        width: auto;
+    }
+    .textoLugarFecha{
+        height: 50%;
+        width: auto;
+    }
+    .divAncla{
+        margin-top: 4vh;
+    }
+    .a{
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    /*formulario*/
+    .formularioOrador{
+        height: 65vh;
+        
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .divFormulario{
+        height: 40vh;
+        width:  100%;
+    }
+    .convierteteEnOrador{
+        margin-top: 2vh;
+    }
+    .formularioForm{
+       text-align: center;
+    }
+    .nombreApellido{
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+       
+       
+    }
+    .divNombre{
+        width: 40vh;
+        margin:2vh ;
+    }
+    .divApellido{
+        width: 40vh;
+        margin: 2vh;
+    }
+    .campoNombreApellido{
+        border: none;
+        text-align: center;
+        font-size: 16px;
+    }
+    .campoTexto{
+        width: 40vh;
+        font-size: 16px;
+        text-align: center;
+    }
+    .inputBotonEnviar{
+        width: 30vh;
+        margin: 4vh;
+        height: 8vh;
+        border:2px solid rgb(108, 117, 126);
+    }
+ /*footer*/
+    .footer{
+        height: 30vh;
+    }
+    .ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 30vh;
+        margin: 50px;
+    }
+}
+
+
+
+            
+        
